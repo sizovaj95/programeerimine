@@ -1,0 +1,12 @@
+first_name = input("Please enter your first name: ")
+last_name = input("Please enter your last name: ")
+email = input("Please enter your e-mail: ")
+occupation = input("Please enter your occupation: ")
+
+print("+" + "-" * 30 + "+")
+print(  "|" + " "*30 + "|")
+print(  "|" + (first_name + " " + last_name+ " - " + email).center(30)+ "|")
+print(  "|"+ " " * 30 + "|")
+print(  "|"+ (occupation).center(30)+ "|",)
+print(  "|"+ " " * 30 + "|")
+print(  "+" + "-" * 30 + "+")
