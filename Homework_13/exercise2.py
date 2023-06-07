@@ -6,4 +6,4 @@ def car_price(price, years):
     return round(price, 2)
 
 
-print(car_price(10000.0, 6))
+print(car_price(40000.0, 8))
