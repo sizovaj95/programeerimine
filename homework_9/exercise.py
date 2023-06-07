@@ -28,9 +28,9 @@ def main():
         place_list = []
         for line in menu:
             if user_input.lower() in line.lower():
-                parts = re.split(r' - |, ', line)
-                place = parts[0]
-                price = float(parts[2])
+                parts = re.split(r'[-,]', line)
+                place = parts[0].strip()
+                price = float(parts[2].strip())
                 place_list.append(place)
                 price_list.append(price)
                 print(f"You can have {user_input} in {place} for {price} EUR.")
